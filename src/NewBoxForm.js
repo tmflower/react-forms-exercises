@@ -20,6 +20,7 @@ function NewBoxForm({ addBox }) {
         addBox({ ...formData });
         setFormData(INITIAL_STATE);
     }
+    
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="width">Width</label>
@@ -49,7 +50,7 @@ function NewBoxForm({ addBox }) {
                 value={formData.color}
                 onChange={handleChange}
             />
-            <button onClick={addBox}>Add a Box</button>
+            <button>Add a Box</button>
         </form>
     )
 }
